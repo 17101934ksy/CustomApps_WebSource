@@ -25,6 +25,7 @@ Flask-SQLAlchemy||2.5.1
 Flask-WTF||0.15.1
 Werkzeug| |2.0.2
 WTForms||2.3.3
+Jinja2||3.0.2
 
 
 
