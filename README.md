@@ -15,7 +15,7 @@ Developer|21101989|황지연|
 ### Environment(version)
 Name|install|Version|
 ---|---|---|
-python| |3.10.o
+python| |3.10.0
 Flask| |.2.0.2
 Flask-JWT-Extended||4.3.1
 Flask-Mail||0.9.1
