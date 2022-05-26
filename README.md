@@ -15,7 +15,16 @@ Developer|21101989|황지연|
 ### Environment(version)
 Name|install|Version|
 ---|---|---|
-python| |3.7.13
+python| |3.10.o
+Flask| |.2.0.2
+Flask-JWT-Extended||4.3.1
+Flask-Mail||0.9.1
+Flask-Markdown||0.3
+Flask-Migrate||3.1.0
+Flask-SQLAlchemy||2.5.1
+Flask-WTF||0.15.1
+Werkzeug| |2.0.2
+WTForms||2.3.3
 
 
 
