@@ -1,0 +1,12 @@
+<!-- field errors-->
+{% for field, errors in form.errors.items() %}
+<div class="alert alert-danger" role="alert">
+    <strong>{{ form[field].label }}</strong>: {{ ', '.join(errors) }}
+</div>
+{% endfor %}
+<!--flash error-->
+{% for message in get_flashed_messages() %}
+<div class="alert alert-danger" role="alert">
+    {{ message }}
+</div>
+{% endfor %}

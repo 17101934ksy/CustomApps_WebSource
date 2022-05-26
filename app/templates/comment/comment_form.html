@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container my-3">
+    <h5 class="border-bottom pb-2">add comment</h5>
+    <form method="post" class="post-form my-3">
+        {{ form.csrf_token }}
+        {% include "form_errors.html" %}
+        <div class="form-group">
+            <label for="content">comment content</label>
+            <textarea class="form-control" name="content" id="content" rows="3">
+                {{ form.content.data or '' }}
+            </textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary"> save </button>
+    </form>
+</div>
+{% endblock %}

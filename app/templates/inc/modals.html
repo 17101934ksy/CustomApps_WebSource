@@ -1,0 +1,56 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">주소 선택</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">주소</label>
+              <input type="text" class="form-control" id="address-modal">
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">상세 주소</label>
+                <input type="text" class="form-control" id="address-detail-modal">
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">선택</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    new daum.Postcode({
+    onclose: function(state) {
+        //state는 우편번호 찾기 화면이 어떻게 닫혔는지에 대한 상태 변수 이며, 상세 설명은 아래 목록에서 확인하실 수 있습니다.
+        if(state === 'FORCE_CLOSE'){
+            //사용자가 브라우저 닫기 버튼을 통해 팝업창을 닫았을 경우, 실행될 코드를 작성하는 부분입니다.
+
+        } else if(state === 'COMPLETE_CLOSE'){
+            //사용자가 검색결과를 선택하여 팝업창이 닫혔을 경우, 실행될 코드를 작성하는 부분입니다.
+            //oncomplete 콜백 함수가 실행 완료된 후에 실행됩니다.
+        }
+    }
+});
+
+    var themeObj = {
+      //bgColor: "", //바탕 배경색
+      searchBgColor: "#0995C8", //검색창 배경색
+      //contentBgColor: "", //본문 배경색(검색결과,결과없음,첫화면,검색서제스트)
+      //pageBgColor: "", //페이지 배경색
+      //textColor: "", //기본 글자색
+      queryTextColor: "#FFFFFF" //검색창 글자색
+      //postcodeTextColor: "", //우편번호 글자색
+      //emphTextColor: "", //강조 글자색
+      //outlineColor: "", //테두리
+    };
+  </script>
+  

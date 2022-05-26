@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from "macro/maps.html" import maps with context %}
+
+
+{% block content %}
+
+{% include 'inc/form_roads.html' %}
+
+{% endblock %}
+
+{% block script %}
+    {{ maps() }}
+
+
+{% endblock %}

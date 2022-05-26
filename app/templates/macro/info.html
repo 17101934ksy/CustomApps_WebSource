@@ -1,0 +1,14 @@
+<!--  모달  생성 -->
+{% macro test_macro(type) %}
+    <h3>
+        Test MACRRO1: {{type}}
+    </h3>
+{%- endmacro -%}
+
+
+{% macro test_macro2(name) %}
+    <h3>
+        TEST MACRO2: {{name}} - {{test_macro.caller}}
+        <div> {{caller(name + ":QQQ")}}</div>
+    </h3>
+{%- endmacro -%}

@@ -1,0 +1,30 @@
+<div class="container my-3">
+    <form id="road_form" method="post" class="post-form">
+        {{ form.csrf_token }}
+        {% include 'inc/form_errors.html' %}
+
+        <div class="form-group">
+            <label for="address">주소를 입력하세요</label>
+            <input type="text" class="form-control" name="address" id="address" value="{{ form.address.data or '' }}" 
+            data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" onclick="hiddenTap()" readonly>
+        </div>
+       <button type="submit" class="btn btn-secondary" onclick="">확인</button>
+    </form>
+</div>
+
+{% include 'inc/modals.html' %}
+
+
+<div class="container my-3">
+    <div></br></br></div>
+    <div id='map' style='width:1000px;height:700px;display:inline-block;'></div>
+</div>
+
+
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function hiddenTap() {
+      document.getElementById("hidden-address").style.display = "none";      
+    }
+        
+</script>
