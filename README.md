@@ -14,9 +14,9 @@ Developer|21101989 황지연|
 
 ### Environment(version)
 Name|install|Version|
-
 ---|---|---|
-python||3.7.13
+python| ... |3.7.13
+python| ... |3.7.13
 
 
 ### Package Info
